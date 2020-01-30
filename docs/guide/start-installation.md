@@ -307,7 +307,7 @@ For more information about Docker setup please visit the [guide](http://www.yiif
 
 Run the migrations
 
-    docker-compose run --rm backend yii migrate
+    docker-compose run --rm backend php yii migrate
            
 Start the application
 
