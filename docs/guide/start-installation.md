@@ -289,9 +289,9 @@ Install the application dependencies
 
 Initialize the application by running the `init` command within a container
 
-    docker-compose run --rm backend /app/init
+    docker-compose run --rm backend php /app/init
 
-Add a database service like and adjust the components['db'] configuration in `common/config/main-local.php` accordingly.
+Adjust the components['db'] configuration in `common/config/main-local.php` accordingly.
     
         'dsn' => 'mysql:host=mysql;dbname=yii2advanced',
         'username' => 'yii2advanced',
@@ -312,7 +312,7 @@ Run the migrations
 Start the application
 
     docker-compose up -d
-    
+
 Access it in your browser by opening
 
 - frontend: http://127.0.0.1:20080
